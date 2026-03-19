@@ -6,7 +6,7 @@ import { food_items } from '../food'
 
 function Home() {
   let [cate,setCate]=useState(food_items)
-
+// function to filter the catogory of the food items
   function filter(category){
     if(category==="All"){
       setCate(food_items)

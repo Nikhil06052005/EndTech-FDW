@@ -14,6 +14,8 @@ function Home() {
     if(category==="All"){
       setCate(food_items)
     }else{
+            // convert category into backend format (lowercase + underscore)
+
       const normalizedCategory = category.toLowerCase().replace(/\s+/g, "_")
       let newList = food_items.filter((item)=>(
         item.food_category===normalizedCategory

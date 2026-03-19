@@ -10,9 +10,9 @@ function Nav() {
         <MdFastfood className='w-[30px] h-[30px] text-green-500'/>
       </div>
 
-      <form className='w-[70%] h-[60px] bg-white flex items-center px-5 gap-5 rounded-md shadow-md'>
+      <form className='w-[45%] h-[60px] bg-white flex items-center px-5 gap-5 rounded-md shadow-md md:w-[70%]'>
         <IoSearch className='text-green-500 w-[20px] h-[20px]'/>
-        <input type="text" placeholder='Search Items...' className='w-[100%] outline-none text-[20px]'/>
+        <input type="text" placeholder='Search Items...' className='w-[100%] outline-none text-[16px] md:text-[20px]'/>
       </form>
 
       <div className='w-[60px] h-[60px] bg-white flex justify-center items-center rounded-md shadow-xl relative'>

@@ -5,31 +5,19 @@ import Card from '../components/Card'
 import { food_items } from '../food'
 
 function Home() {
-  // state to store filtered food items (default = all items)
   let [cate,setCate]=useState(food_items)
-  // function to filter food items based on category
-  function filter(category){
-        // if "All" clicked → show all items
 
+  function filter(category){
     if(category==="All"){
       setCate(food_items)
     }else{
-            // convert category into backend format (lowercase + underscore)
-
-      const normalizedCategory = category.toLowerCase().replace(/\s+/g, "_")
-            // filter items based on category match
-
       let newList = food_items.filter((item)=>(
-        item.food_category===normalizedCategory
+        item.food_category===category
       ))
-            // update state with filtered list
-
       setCate(newList)
     }
   }
   return (
-        // main container
-
     <div className='bg-slate-200 w-full min-h-screen '>
       <Nav />
 

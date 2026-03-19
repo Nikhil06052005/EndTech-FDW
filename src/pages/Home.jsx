@@ -9,6 +9,8 @@ function Home() {
   let [cate,setCate]=useState(food_items)
   // function to filter food items based on category
   function filter(category){
+        // if "All" clicked → show all items
+
     if(category==="All"){
       setCate(food_items)
     }else{

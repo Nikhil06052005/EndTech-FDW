@@ -28,6 +28,8 @@ function Home() {
     }
   }
   return (
+        // main container
+
     <div className='bg-slate-200 w-full min-h-screen '>
       <Nav />
 

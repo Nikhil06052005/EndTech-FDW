@@ -5,8 +5,9 @@ import Card from '../components/Card'
 import { food_items } from '../food'
 
 function Home() {
+  // state to store filtered food items (default = all items)
   let [cate,setCate]=useState(food_items)
-// function to filter the catogory of the food items
+  // function to filter food items based on category
   function filter(category){
     if(category==="All"){
       setCate(food_items)

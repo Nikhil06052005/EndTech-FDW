@@ -22,6 +22,8 @@ function Home() {
       let newList = food_items.filter((item)=>(
         item.food_category===normalizedCategory
       ))
+            // update state with filtered list
+
       setCate(newList)
     }
   }

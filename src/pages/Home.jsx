@@ -5,6 +5,7 @@ import Card from '../components/Card'
 import { food_items } from '../food'
 import { dataContext } from '../context/UserContext'
 import { RxCross2 } from "react-icons/rx";
+import Card2 from '../components/Card2'
 
 function Home() {
   let {cate,setCate,input,showCart,setShowCart}=useContext(dataContext)
@@ -42,6 +43,7 @@ function Home() {
           <span className='text-green-400 text-[18px] font-semibold'>Order items</span>
           <RxCross2 className='w-[30px] h-[30px] cursor-pointer text-green-400 text-[18px] font-semibold hover:text-gray-600' onClick={()=>setShowCart(false)} />
         </header>
+        <Card2 />
       </div>
     </div>
   )

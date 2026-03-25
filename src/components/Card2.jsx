@@ -1,22 +1,38 @@
-import React from 'react'
-import image1 from "../assets/image1.avif";
+import React from "react";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { useDispatch } from "react-redux";
+import { DecrementQty, IncrementQty, RemoveItem } from "../redux/cartSlice";
 
-function Card2() {
+function Card2({ name, id, price, image, qty }) {
+  let dispatch = useDispatch();
   return (
-    <div className='w-[full] h-[120px] bg-red-300 p-2'>
-      <div className='w-[60%] h-full bg-slate-400 '>
-        <div className='w-[50%] h-full overflow-hidden'><img src={image1} alt="" /></div>
-        <div>
-            <div>Name</div>
-            <div>Quantity: 5</div>
+    <div className="w-full h-[120px] p-2 shadow-lg flex justify-between ">
+      <div className="w-[60%] h-full flex gap-5 ">
+        <div className="w-[50%] h-full overflow-hidden rounded-lg">
+          <img src={image} alt="" className="object-cover " />
+        </div>
+        <div className='w-[40%] h-full flex flex-col gap-3'>
+          <div className="text-lg text-gray-600 semibold">{name}</div>
+          <div className="w-[110px] h-[50px] bg-slate-400 flex justify-center items-center rounded-lg overflow-hidden shadow-lg font-semibold border-2 border-green-400 text-xl">
+            <button
+              className="w-[30%] h-full bg-white text-green-400 hover:bg-gray-200 cursor-pointer"
+              onClick={() => { qty>1?dispatch(DecrementQty({ id, qty: 1 })):null }}
+            >
+              -
+            </button>
+            <span className="w-[40%] h-full bg-slate-200 justify-center flex items-center text-green-400">{qty}</span>
+            <button className="w-[30%] h-full bg-white justify-center flex items-center text-green-400 hover:bg-gray-200 cursor-pointer" onClick={() => dispatch(IncrementQty({ id }))}>
+              +
+            </button>
+          </div>
         </div>
       </div>
-      <div>
-        <div>Price</div>
-        <div>Rs 100/-</div>
+      <div className="flex flex-col justify-start items-end gap-6">
+        <span className="text-xl text-green-400 font-semibold">Rs {price} /-</span>
+        <RiDeleteBin6Line className="w-[30px] h-[30px] text-red-400 cursor-pointer" onClick={()=> dispatch(RemoveItem(id))} />
       </div>
     </div>
-  )
+  );
 }
 
-export default Card2
+export default Card2;

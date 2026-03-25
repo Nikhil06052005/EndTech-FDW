@@ -27,27 +27,27 @@ A modern, fast, and user-friendly **Food Delivery Web Application** built with c
 ## 📸 Screenshots
 
 ### 1️⃣ Home Page & Food Browse
-![Screenshot 1](./screenshots/screenshot-1.png)
+![Screenshot 1](./screenshots/screenshot-11.png)
 *Browse all available food items with beautiful card layouts*
 
 ### 2️⃣ Food Categories
-![Screenshot 2](./screenshots/screenshot-2.png)
+![Screenshot 2](./screenshots/screenshot-22.png)
 *Filter food by categories like Breakfast, Soups, Mains, etc.*
 
 ### 3️⃣ Search Functionality
-![Screenshot 3](./screenshots/screenshot-3.png)
+![Screenshot 3](./screenshots/screenshot-33.png)
 *Search for your favorite dishes in real-time*
 
 ### 4️⃣ Shopping Cart
-![Screenshot 4](./screenshots/screenshot-4.png)
+![Screenshot 4](./screenshots/screenshot-44.png)
 *Manage your cart with quantity controls*
 
 ### 5️⃣ Cart Checkout
-![Screenshot 5](./screenshots/screenshot-5.png)
+![Screenshot 5](./screenshots/screenshot-55.png)
 *Review order details with taxes and delivery charges*
 
 ### 6️⃣ Order Summary
-![Screenshot 6](./screenshots/screenshot-6.png)
+![Screenshot 6](./screenshots/screenshot-66.png)
 *Final order summary before placing order*
 
 ---
@@ -268,9 +268,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+**Nikhil Dhuriya**
+- GitHub: [@yourusername](https://github.com/Nikhil06052005)
+- Email: nikhilkashyap09793000@gmail.com
 
 ---
 
